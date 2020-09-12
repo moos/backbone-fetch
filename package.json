@@ -28,7 +28,7 @@
     "form-data": "^3.0.0",
     "mocha": "^7.0.1",
     "nock": "^12.0.0",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "underscore": "^1.9.2"
   },
   "dependencies": {}
