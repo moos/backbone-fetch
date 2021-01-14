@@ -8,7 +8,7 @@ using ES6 [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Usi
 npm i @moos/backbone-fetch
 ```
 
-Or get it from a CDN. 
+Or get it from [jsDelivr](https://www.jsdelivr.com/package/gh/moos/backbone-fetch) CDN...
 
 Latest:
 - https://cdn.jsdelivr.net/gh/moos/backbone-fetch/backbone-fetch.js

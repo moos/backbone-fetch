@@ -1,6 +1,6 @@
 {
   "name": "@moos/backbone-fetch",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Backbone Models without jQuery.ajax",
   "main": "backbone-fetch.js",
   "scripts": {
