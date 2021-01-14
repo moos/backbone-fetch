@@ -8,7 +8,16 @@ using ES6 [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Usi
 npm i backbone-fetch
 ```
 
-TODO cdn
+Or get it from a CDN. 
+
+Latest:
+- https://cdn.jsdelivr.net/gh/moos/backbone-fetch/backbone-fetch.js
+- https://cdn.jsdelivr.net/gh/moos/backbone-fetch/backbone-fetch.min.js (minified)
+
+Versioned (recommemded in production):
+- https://cdn.jsdelivr.net/gh/moos/backbone-fetch@1.0/backbone-fetch.js
+- https://cdn.jsdelivr.net/gh/moos/backbone-fetch@1.0/backbone-fetch.min.js (minified)
+
 
 ## Usage
 
