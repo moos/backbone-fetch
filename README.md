@@ -1,6 +1,6 @@
 # backbone-fetch
 [Backbone](https://backbonejs.org/) Model CRUD operations 
-using ES6 [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) API.  Can be used without `jQuery` or jQuery.ajax`.
+using ES6 [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) API.  Can be used without `jQuery` or `jQuery.ajax`.
 
 ## Install
 
