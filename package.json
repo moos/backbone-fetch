@@ -1,0 +1,35 @@
+{
+  "name": "backbone-fetch",
+  "version": "0.1.0",
+  "description": "Backbone Models without jQuery.ajax",
+  "main": "backbone-fetch.js",
+  "scripts": {
+    "test": "mocha backbone-fetch.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moos/backbone-fetch.git"
+  },
+  "keywords": [
+    "Backbone",
+    "fetch",
+    "jQuery",
+    "ajax"
+  ],
+  "author": "Moos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moos/backbone-fetch/issues"
+  },
+  "homepage": "https://github.com/moos/backbone-fetch#readme",
+  "devDependencies": {
+    "abortcontroller-polyfill": "^1.4.0",
+    "backbone": "^1.4.0",
+    "form-data": "^3.0.0",
+    "mocha": "^7.0.1",
+    "nock": "^12.0.0",
+    "node-fetch": "^2.6.0",
+    "underscore": "^1.9.2"
+  },
+  "dependencies": {}
+}
