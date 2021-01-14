@@ -47,7 +47,7 @@ The success of abort depends on the state of the fetch call at the time abort wa
 
 ## Change log
 
-- 1.0.0 Initial release
+- 1.0 Initial release
 
 ## License
 
