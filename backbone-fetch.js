@@ -3,7 +3,7 @@
  *
  * Inspired by https://gist.github.com/akre54/9891fc85ff46afd85814
  *
- * (c) 2021 Moos
+ * (c) 2021 Moos (https://github.com/moos)
  */
 
 ;(function() {
@@ -18,7 +18,6 @@
     typeof global == 'object' && global.global === global && global ||
     this ||
     {};
-
 
   var _ = Backbone._ || root._;
   var HTTP_NO_CONTENT = 204;
@@ -261,7 +260,7 @@
    * @param options {object} @see Backbone
    * @return {Promise<any>}
    */
-  Backbone.ajax = function (options) {
+  function BackboneAjax(options) {
     var withBody = _.includes(['POST', 'PUT', 'PATCH'], options.type);
 
     if (options.type === 'GET' && typeof options.data === 'object') {
@@ -358,5 +357,11 @@
 
     return xhr;
   };
+
+  if (typeof exports === 'object') {
+    module.exports = BackboneAjax;
+  } else {
+    Backbone.ajax = BackboneAjax;
+  }
 
 })();

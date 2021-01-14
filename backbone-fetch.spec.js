@@ -6,7 +6,7 @@ global.FormData = require('form-data');
 global.fetch = require('node-fetch');
 global._ = require('underscore');
 global.Backbone = require('backbone');
-require('./backbone-fetch');
+global.Backbone.ajax = require('./backbone-fetch');
 
 
 // support for fetch abort() -- this polyfill obliterates fetch.Response

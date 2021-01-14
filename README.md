@@ -1,5 +1,7 @@
 # backbone-fetch
-[Backbone](https://backbonejs.org/) Model CRUD operations using ES6 `fetch`.  Can be used without `jQuery.ajax`.
+[Backbone](https://backbonejs.org/) Model CRUD operations 
+using ES6 [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) API.  
+Can be used without `jQuery` or jQuery.ajax`.
 
 ## Install
 
@@ -19,7 +21,7 @@ model.save()
   .then(response => {...})
   .catch(error => {...});
 ```
-Similar for other CRUD operations: `fetch()` & `destroy()`.
+Similar for other Backbone CRUD operations: `fetch()` & `destroy()`.
 
 Note: it returns an ES6 **Promise**.  Use polyfill for older browsers.
 
