@@ -5,24 +5,25 @@ using ES6 [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Usi
 ## Install
 
 ```
-npm i backbone-fetch
+npm i @moos/backbone-fetch
 ```
 
 Or get it from a CDN. 
 
 Latest:
 - https://cdn.jsdelivr.net/gh/moos/backbone-fetch/backbone-fetch.js
-- https://cdn.jsdelivr.net/gh/moos/backbone-fetch/backbone-fetch.min.js (minified)
+- https://cdn.jsdelivr.net/gh/moos/backbone-fetch/backbone-fetch.min.js 
 
 Versioned (recommemded in production):
 - https://cdn.jsdelivr.net/gh/moos/backbone-fetch@1.0/backbone-fetch.js
-- https://cdn.jsdelivr.net/gh/moos/backbone-fetch@1.0/backbone-fetch.min.js (minified)
+- https://cdn.jsdelivr.net/gh/moos/backbone-fetch@1.0/backbone-fetch.min.js 
 
 
 ## Usage
 
 ```js
-require('backbone-fetch'); // or <scrip> or import ...
+require('backbone');
+Backbone.ajax = require('@moos/backbone-fetch'); // or use <scrip> 
 
 let model = new Backbone.Model({foo: 1});
 model.save()
@@ -45,10 +46,11 @@ model.save(null, {
   .catch(error => {...});
 ```
 
-If [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) is supported (sorry **IE** or use a polyfill), the returned promise will have an `abort()` method:
+If [AbortController](https://developer.mozilla.org/en-US/docs/Web/API/AbortController) is supported (sorry *IE* or use a polyfill), the returned promise will have an `abort()` method:
 
 ```js
 var promise = model.fetch();
+// a little later...
 promise.abort();
 ```
 The success of abort depends on the state of the fetch call at the time abort was called.  According to [AbortController/abort()](https://developer.mozilla.org/en-US/docs/Web/API/AbortController/abort) docs, "when abort() is called, the fetch() promise rejects with an AbortError."
